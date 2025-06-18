@@ -61,7 +61,7 @@ As a trial of alternating the augmentation methods, I used RandomResizedCrop, Ra
 | +MEMO + BN (RandomResizedCrop) + Sharpened SoftMax Marginal Entropy | 4.84| 68.03 |
 | +MEMO + BN (RandomResizedCrop) + Augmentation Weighted Marginal Entropy | **9.17** | 68.80 |
 | +MEMO + BN (RandomResizedCrop + RandomHorizontalFlip) | 8.17 | 67.79 |
-| +MEMO + BN (RandomResizedCrop + RandomAffine + RandomPerspective + RandomHorizontalFlip) | 7.51 | __ |
+| +MEMO + BN (RandomResizedCrop + RandomAffine + RandomPerspective + RandomHorizontalFlip) | 7.51 | 66.13 |
 
 
 
@@ -73,7 +73,7 @@ As a trial of alternating the augmentation methods, I used RandomResizedCrop, Ra
 | +MEMO + BN (RandomResizedCrop) + Sharpened SoftMax Marginal Entropy | **29.87** | 75.49 |
 | +MEMO + BN (RandomResizedCrop) + Augmentation Weighted Marginal Entropy | 24.22 | 76.78 |
 | +MEMO + BN (RandomResizedCrop + RandomHorizontalFlip) | 24.31 | **78.90** |
-| +MEMO + BN (RandomResizedCrop + RandomAffine + RandomPerspective + RandomHorizontalFlip) | __ | __ |
+| +MEMO + BN (RandomResizedCrop + RandomAffine + RandomPerspective + RandomHorizontalFlip) | 24.13 | 78.50 |
 
 
 
@@ -84,6 +84,6 @@ As a trial of alternating the augmentation methods, I used RandomResizedCrop, Ra
 | +MEMO (RandomResizedCrop) + Sharpened SoftMax Marginal Entropy| 23.43 | 72.30 |
 | +MEMO (RandomResizedCrop) + Augmentation Weighted Marginal Entropy| 25.17 | 72.82 |
 | +MEMO (RandomResizedCrop + RandomHorizontalFlip)| 24.97 | 72.84 |
-| +MEMO (RandomResizedCrop + RandomAffine + RandomPerspective + RandomHorizontalFlip) | __ | __ |
+| +MEMO (RandomResizedCrop + RandomAffine + RandomPerspective + RandomHorizontalFlip) | 24.49 | 72.74 |
 
 
