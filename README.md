@@ -3,12 +3,15 @@ The repository for the Deep Learning [145903] course project assignment at Unive
 
 In this project I re-implemented [Zhang et al. (2021)](https://arxiv.org/abs/2110.09506) MEMO (Marginal Entropy Minimization with One test point) to improve the performance of the pre-trained model on image classification task at a test time. The purpose of the project is to adapt the model to perform better when the test data distribution differs from the distribution of the dataset it was originally trained on.
 
-The final report notebook of the Project can be found [HERE]()
-
-### Test Time Adaptation
+### The final report notebook of the Project can be found [HERE](https://github.com/yesunerdene9/deep-learning/blob/main/project_report.ipynb)
 
 
-#### Instructions for running experiments ℹ️
+
+
+
+(If need to look at the report in github, the visible version is [here](https://github.com/yesunerdene9/deep-learning/blob/main/project_report_cleared_output.ipynb))
+
+## Instructions for running experiments ℹ️
 
 *   If the reader must run the experiment on ***Google Colab***, please set the variable $IS\_COLAB$ to $True$ in the first Preparation cell
     *   The dataset needs to be present in the reader's Google Drive, and please change the image root variables as well
@@ -18,7 +21,7 @@ The final report notebook of the Project can be found [HERE]()
 
 If anything needs clarification, please send an email to me.
 
-### Discussion about my modification and their results
+## Discussion about my modification and their results
 
 Due to the large amount of time required to keep the experiment minimal, I limited the augmentation number to 32, although it was ideal to set it to 64, as suggested in the MEMO paper. Nevertheless, my experiment did improve the baseline performance, which was achieved without applying any TTA method. Also for the same reason, I haven't included AugMix as an option to apply as an augmentation; however, one experiment was done with AugMix, but it was taking more than 4 hours, and the result was not competitive with others; therefore, I avoided including AugMix augmentation choice in the modification.
 
@@ -52,6 +55,8 @@ As the MEMO paper has witnessed the improvement using the horizontal flip standa
 **RandomResizedCrop + RandomAffine + RandomPerspective + RandomHorizontalFlip**
 
 As a trial of alternating the augmentation methods, I used RandomResizedCrop, RandomAffine, RandomPerspective, and RandomHorizontalFlip.
+
+## Results
 
 |  Test Result with ResNet50 with weight V1  | ImageNet-A | ImageNet-V2 |
 |-----|:------------:|:-------------:|
